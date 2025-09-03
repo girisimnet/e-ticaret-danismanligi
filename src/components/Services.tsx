@@ -9,6 +9,8 @@ import {
   BarChart3,
   ArrowRight 
 } from "lucide-react";
+import analyticsImage from "@/assets/analytics-dashboard.jpg";
+import workspaceImage from "@/assets/office-workspace.jpg";
 
 const Services = () => {
   const services = [
@@ -98,6 +100,25 @@ const Services = () => {
           <Button variant="hero" size="lg">
             Tüm Hizmetleri İnceleyin
           </Button>
+        </div>
+        
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="relative">
+            <img 
+              src={analyticsImage} 
+              alt="E-ticaret analitik dashboard ve büyüme grafikleri"
+              className="rounded-xl shadow-card w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-primary/20 rounded-xl"></div>
+          </div>
+          <div className="relative">
+            <img 
+              src={workspaceImage} 
+              alt="Modern ofis çalışma alanında e-ticaret stratejisi"
+              className="rounded-xl shadow-card w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-card/30 rounded-xl"></div>
+          </div>
         </div>
       </div>
     </section>

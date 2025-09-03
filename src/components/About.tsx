@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Clock } from "lucide-react";
+import consultingImage from "@/assets/consulting-team.jpg";
 
 const About = () => {
   const stats = [
@@ -79,17 +80,27 @@ const About = () => {
           </div>
         </div>
         
-        <div className="mt-20 p-8 bg-gradient-hero rounded-2xl text-center">
-          <h3 className="text-3xl font-bold text-primary-foreground mb-4">
-            Başarı Hikayenizi Birlikte Yazalım
-          </h3>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            E-ticaret yolculuğunuzda yanınızda olan uzman ekibimizle, 
-            hayalinizdeki başarıya ulaşın.
-          </p>
-          <Button variant="outline" size="lg" className="bg-background/20 border-primary-foreground/30 text-primary-foreground hover:bg-background/30">
-            Projenizi Değerlendirelim
-          </Button>
+        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <img 
+              src={consultingImage} 
+              alt="Profesyonel e-ticaret danışmanlık ekibi toplantı halinde"
+              className="rounded-xl shadow-card w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-primary/10 rounded-xl"></div>
+          </div>
+          <div className="p-8 bg-gradient-hero rounded-2xl">
+            <h3 className="text-3xl font-bold text-primary-foreground mb-4">
+              Başarı Hikayenizi Birlikte Yazalım
+            </h3>
+            <p className="text-xl text-primary-foreground/90 mb-8">
+              E-ticaret yolculuğunuzda yanınızda olan uzman ekibimizle, 
+              hayalinizdeki başarıya ulaşın.
+            </p>
+            <Button variant="outline" size="lg" className="bg-background/20 border-primary-foreground/30 text-primary-foreground hover:bg-background/30">
+              Projenizi Değerlendirelim
+            </Button>
+          </div>
         </div>
       </div>
     </section>
